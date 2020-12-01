@@ -14,7 +14,10 @@ const App = () => {
   function handleKeyDown(event){
     if (event.keyCode===13){
       const tCount = parseInt(event.target.value)
-      if(tCount <= 0 || tCount === NaN){
+      if(tCount === NaN){
+        setTimer(0)
+      }
+      else if (tCount <= 0){
         setTimer(0)
       }
       else{
