@@ -13,7 +13,7 @@ const App = () => {
 
   function handleKeyDown(event){
     if (event.keyCode===13){
-      const tCount = parseInt(event.target.value)
+      const tCount = Math.floor(event.target.value)
       // console.log(tCount)
       if(typeof(tCount) === "number" && tCount > 0){
         setTimer(tCount)
